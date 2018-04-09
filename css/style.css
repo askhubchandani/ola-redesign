@@ -7,7 +7,7 @@
 }
 
 body {
-	 background: linear-gradient(45deg, #9b59b6,#e74c3c);
+	 background: #fff;
 	font-family: 'Open Sans', arial, sans-serif;
 }
 
@@ -110,11 +110,11 @@ a {
 
 #main {
     padding: 80px 0;
-     background: linear-gradient(45deg, #9b59b6,#e74c3c);
+     background: linear-gradient(45deg, #1abc9c,#2ecc71);
 }
 
 #main h1 {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     font-size: 32px;
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
@@ -122,7 +122,7 @@ a {
 
 #main hr {
     width: 20%;
-    margin: 0 auto 26px auto;
+    margin: 0 auto 20px auto;
     height: 4px;
     background: #2c2c2c;
     border: none;
@@ -135,6 +135,26 @@ a {
     font-weight: 400;
 }
 
+.feature {
+    background: #fff no-repeat;
+    height: auto;
+    z-index: 500;
+    
+}
+
+.feature article {
+    text-align: justify;
+    margin: 10% auto;
+    max-width: 900px;
+}
+
+.feature article p {
+    font-family: "Georgia";
+    font-size: 1.5em;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 5%;
+}
 
 @media screen and (min-width: 810px) {
     #main h1 {
@@ -143,7 +163,7 @@ a {
     
     #main p {
         width: 600px;
-        font-size: 23px;
+        font-size: 15px;
         margin: 0 auto;
         margin-bottom: 18px;
     }
@@ -154,63 +174,8 @@ a {
 /* Footers Sections Styling */
 
 footer {
-    padding: 30px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient(45deg, #9b59b6,#e74c3c);
-}
-
-footer p {
-    font-size: 19px;
-    font-family: 'Open Sans', arial, sans-serif;
-    font-weight: 400;
-    color: #000000;
-}
-
-footer p a {
-    text-decoration: none;
-    color: #000000;
-}
-
-footer p a:hover {
-    color: #000000;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li {
-    display: inline;
-    padding: 0 4px;
-    font-size: 23px;
-}
-
-footer ul li a {
-    color: #000000;
-}
-
-footer ul li a:hover {
-    color: #000000;
-}
-
-@media screen and (max-width: 720px) {
-    footer {
-        padding: 15px 0;
-        flex-direction: column;
-    }
-
-    footer div {
-        margin: 15px 0;
-    }
-
-    footer div:first-child {
-        order: 2;
-    }
-
-    footer p {
-        font-size: 18px;
-    }
+    margin-top: 2%;
+    padding: 1%;
+    border-top: 1px solid #000000;
+    text-align: center;
 }

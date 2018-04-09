@@ -39,53 +39,77 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <article>
-                            <p>A lot of Software Developers and Designers these days are obsessed with improving the page load time of the website, finding the best possible fonts, colours and typography, in order to improve the UX of the website/app. But what a lot of people forget is the point where the real contact happens between the user and the wesbite/app: 
-			    <b>The Contact Forms.</b> </p>
+                            <This is the general scenario of how from Point A to Drop A in OLA Share or Uber Pool works.
 
-                            <p>New HTML 5 specs have a lot of cool features, including helping in validation of forms without the need of server-side requirements or scripting. By default inputs type like email or telephone numbers use a pattern that checks that the information filled is correct or not, and forms can be submitted when the user clicks on the submit bottom.</p>
+You are not the only passenger travelling in the cab, you will be sharing a hatchback five seater cab with two more people before you reach your destination
+Just picking up all three passengers would take approximately 30 mins or more, depending on different conditions
+Traffic
+Vehicle Condition
+Distance from first passenger pick up to next passenger pick up
+Waiting time at the passenger’s pickup location
+Road Condition
+Lack of communication between driver and Passenger
+Now let’s see how your trip of 10 kms (let’s say) ends up a 2–3 hrs ride around the city with strangers.
 
-                            <p>Here, I used a lot of patterns and validation controls in order to help the user to fill the forms, which can be found below:</p> 
-                            
-		            <p><b>1) required:</b>
-                            This HTML attribute can be used with input and textarea. It indicates that the field should be filled out before the form is submitted. It is very useful to let user know that we need that information, for example the email or the phone number. </p>  
-                            
-                            <p><b>2) pattern:</b>
-                            Another HTML attribute to check the information added by users. In that case we can build our own pattern or use one of the patterns by default. It depends on the type attribute. For example, if we use the email type, it will looking for an email string (with @ in the middle and a valid domain extension such as .com, .org or whatever.) However, the power of this attribute is that we can create our own pattern, excluding numbers for instance or any character we want to avoid. The pattern attribute requires a regular expression in order to work properly.</p>
-                 
-                            <p><b>3) placeholder:</b>
-                            The most useful attribute in this collection for UX. It helps user to understand what kind of info we are looking for. It can also display an example data that will disappear when the user starts filling out the input (typing a character) and not when the input is :focus.</p>
-              
-			    <p><b>4) ::placeholder</b>
-			    Pseudo-element related with above attribute. It helps us style the placeholder, so we can change the text colour or other font properties to let users know that this is an example and not a real text.</p>
-				
-			    <p><b>5) :focus</b>
-		            A basic pseudo-class that runs when the user is focusing an input or textarea. It is necessary that the user click on it or navigate with the keyboard to considerate the input as focused.</p>
-				
-		            <p><b>6) :valid</b>
-			    This pseudo-selector will let us know if the string added in the input is correct and check with the pattern we have set. So basically we can style the input if the info is correct.</p>
-				
-			    <p><b>7) :invalid</b>
-			    The opposite of valid. The question here is: What happens when no value is added to the input? Will it be :valid or :invalid? Well, the answers in that case depends on the required attribute. If it exists for that input and no value has been added, then is an :invalid element. Otherwise it will be :valid.</p>
-				
-			    <p><b>8) :placeholder-shown</b>
-			    A new feature which is still in the draft of CSS level 4 specification, but the compatibility with browsers is quite reliable at this moment (except on IE and Edge).</p>
+Let’s Keep codes:
 
-                            <p>This is a pseudo-class that runs only when placeholder is being shown. It means that it will be enabled when the input is not focused and when it is focused but the user has not typed any character yet.</p>
+Three Passengers: P1,P2 & P3
+Three different drop points: D1, D2 & D3
+For the record, let’s not consider the scenario where a passenger books more than 1 seat for a single ride.
 
-                            <p>There are a lot of possibilities here. Now, we can know if users get stuck in one of the inputs. For example, if an user has clicked on an input but doesn’t know what to write, we can show a notice after 5 seconds that helps the user complete it, and all of this only with CSS! </p>
+The ride begins
 
-                            <p>Another possibility: the user is filling the input, but 30 second has passed and the input is still invalid. Maybe the user has not understand what pattern we are looking for.</p>
-				
-              
-              
-              
-				<h2> <b> The form with CSS validation that I made can be seen below: </b></h2>
-              &nbsp;
-              
-              <p data-height="500" data-theme-id="0" data-slug-hash="YadZdY" data-default-tab="result" data-user="askhubchandani" data-embed-version="2" data-pen-title="Better Forms." data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/askhubchandani/pen/YadZdY/">Better Forms.</a> by Adarsh Khubchandani (<a href="https://codepen.io/askhubchandani">@askhubchandani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-              </article>
-                    </div>
+P1 booked a pool cab, which is just 5 min away but actually it could be delayed as he should drop someone or pick up someone.
+
+Finally, after a couple of calls to the driver, he’s at the pick up location. P1 hopped in.
+
+P1 destination is 31mins away i.e., D1
+The App selects the route for P1’s destination to make sure the driver gets two more pickups (P2 & P3) and cannot deviate to the shortest path. After traveling 3km, driver receives a booking of P2 and picks up P2 which could be a potential 3km distance added to the actual route of P1 and started to go from there to drop either P1 or P2 that only driver knows, which is again assigned by the app depending on the route.
+
+P2 destination is 16min away i.e., D2
+P1 and P2 started there journey wondering whose drop is first and P1 asked the driver in curiosity, and, as per the App assigned route we are travelling, P2 will be dropped first so P1 ETA changed from the initial 31min to unknown. Meanwhile, after travelling a couple of kms there is another booking by P3. Driver is happy, and P1 & P2, surrendering to their fate, took to their mobile phones to watch movies, assuming they will reach the end by the time they are dropped. Driver picked P3. P1 and P2 are in a fix and not sure of how long the journey takes.
+
+P3 hopped in and no one is sure who will be dropped first!
+P1 to Driver: Who are you dropping first Chief (Driver)?
+
+Driver: let me see the App and he says P1 will be dropped and after dropping P1 only we can see who’s next, depending on the route assigned by the App and if you are really out of luck, we could get another booking.
+
+Conclusion: you have no control of your itinerary when you book a Share or Pool cab.
+And if you cancel the ride after 5min you are charged a certain amount even if the fault is at the drivers end.
+
+Look at bright side though —cab fare is fixed in pool or share although your destination is 5 kms and you travelled 30km to reach.
+
+Now let’s see a different strategy which I feel may be good for Users
+
+Assuming that the cab service providers haven’t thought of this, I feel it may help the Product and User primarily.
+
+What if we give the control to the user, instead of the driver, i.e., let the user know the details of the cabs nearby and no.of. passengers sharing or pooling and ETA for each of the passenger and area.
+
+This way
+
+P1 will reach his destination with a difference of 15min in his ETA, give or take
+P1,P2 & P3 know what is the ETA and how long they have to spend in the cab for the actual journey.
+User has the control to choose the driver and book a ride.
+Search for the drivers who are en route and confirm booking. User can choose from one or more cabs which will take the shortest time given all the information available to him/her.
+
+
+
+
+<b>Advantages:</b>
+
+Know the person you are travelling with only after confirming your booking (security reasons)
+Know who’s being dropped first and in how much time
+How many co-passengers are you travelling with (Names not displayed unless you confirm your ride)
+Find the shortest route to your destination
+Show only co-passengers drop location in case the P1 dropped last or second.
+
+&nbsp;
+			    
+<b>Conclusion:</b>
+
+Rather than sitting in car for hours for a 20min journey. It’s better to spend time in choosing from the options available. The information of Route and Passengers is already available. Just mapping to one destination is needed and considering passengers’ time should be the primary goal instead of distance from point to point.          
+</article>
+        </div>
                 </div>
                 <!-- row end -->
             </div>

@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>OLA Redesign. </title>
-    <meta name="description" content="My version of OLA Redesign">
+    <title>Better Forms </title>
+    <meta name="description" content="My Attempt to improve UX in Forms.">
     <link rel="icon" href="images/favicon.png" sizes="16x16">
     <meta name="theme-color" content="#119fd8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-   
+    <link rel="favicon" href="images/favicon.jpg">
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="image_src" href="images/favicon.jpg">
+    <link rel="icon" href="images/favicon.jpg" sizes="16x16">
 </head>
     
 <body>
@@ -24,30 +27,84 @@
 <!-- Main Section -->
     
     <section id="main" class="fade-in">
-        <h1>OLA Redesign.</h1><hr>
-        <p>My version of OLA Redesign.</p>
+        <h1>Better Forms</h1><hr>
+        <p>My attempt to improve the UX in forms.</p>
     </section>
+    <div class="scrollback" id="about">
+        
+	    
+<!-- Feature Article Section -->	    
+<section class="feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <article>
+                            <p>A lot of Software Developers and Designers these days are obsessed with improving the page load time of the website, finding the best possible fonts, colours and typography, in order to improve the UX of the website/app. But what a lot of people forget is the point where the real contact happens between the user and the wesbite/app: 
+			    <b>The Contact Forms.</b> </p>
+
+                            <p>New HTML 5 specs have a lot of cool features, including helping in validation of forms without the need of server-side requirements or scripting. By default inputs type like email or telephone numbers use a pattern that checks that the information filled is correct or not, and forms can be submitted when the user clicks on the submit bottom.</p>
+
+                            <p>Here, I used a lot of patterns and validation controls in order to help the user to fill the forms, which can be found below:</p> 
+                            
+		            <p><b>1) required:</b>
+                            This HTML attribute can be used with input and textarea. It indicates that the field should be filled out before the form is submitted. It is very useful to let user know that we need that information, for example the email or the phone number. </p>  
+                            
+                            <p><b>2) pattern:</b>
+                            Another HTML attribute to check the information added by users. In that case we can build our own pattern or use one of the patterns by default. It depends on the type attribute. For example, if we use the email type, it will looking for an email string (with @ in the middle and a valid domain extension such as .com, .org or whatever.) However, the power of this attribute is that we can create our own pattern, excluding numbers for instance or any character we want to avoid. The pattern attribute requires a regular expression in order to work properly.</p>
+                 
+                            <p><b>3) placeholder:</b>
+                            The most useful attribute in this collection for UX. It helps user to understand what kind of info we are looking for. It can also display an example data that will disappear when the user starts filling out the input (typing a character) and not when the input is :focus.</p>
+              
+			    <p><b>4) ::placeholder</b>
+			    Pseudo-element related with above attribute. It helps us style the placeholder, so we can change the text colour or other font properties to let users know that this is an example and not a real text.</p>
+				
+			    <p><b>5) :focus</b>
+		            A basic pseudo-class that runs when the user is focusing an input or textarea. It is necessary that the user click on it or navigate with the keyboard to considerate the input as focused.</p>
+				
+		            <p><b>6) :valid</b>
+			    This pseudo-selector will let us know if the string added in the input is correct and check with the pattern we have set. So basically we can style the input if the info is correct.</p>
+				
+			    <p><b>7) :invalid</b>
+			    The opposite of valid. The question here is: What happens when no value is added to the input? Will it be :valid or :invalid? Well, the answers in that case depends on the required attribute. If it exists for that input and no value has been added, then is an :invalid element. Otherwise it will be :valid.</p>
+				
+			    <p><b>8) :placeholder-shown</b>
+			    A new feature which is still in the draft of CSS level 4 specification, but the compatibility with browsers is quite reliable at this moment (except on IE and Edge).</p>
+
+                            <p>This is a pseudo-class that runs only when placeholder is being shown. It means that it will be enabled when the input is not focused and when it is focused but the user has not typed any character yet.</p>
+
+                            <p>There are a lot of possibilities here. Now, we can know if users get stuck in one of the inputs. For example, if an user has clicked on an input but doesn’t know what to write, we can show a notice after 5 seconds that helps the user complete it, and all of this only with CSS! </p>
+
+                            <p>Another possibility: the user is filling the input, but 30 second has passed and the input is still invalid. Maybe the user has not understand what pattern we are looking for.</p>
+				
+              
+              
+              
+				<h2> <b> The form with CSS validation that I made can be seen below: </b></h2>
+              &nbsp;
+              
+              <p data-height="500" data-theme-id="0" data-slug-hash="YadZdY" data-default-tab="result" data-user="askhubchandani" data-embed-version="2" data-pen-title="Better Forms." data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/askhubchandani/pen/YadZdY/">Better Forms.</a> by Adarsh Khubchandani (<a href="https://codepen.io/askhubchandani">@askhubchandani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+              </article>
+                    </div>
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container end -->
+        </section>
+    </div>
 
 
 
     
 <!-- Footer Section -->
 
-    <footer>
-        <div>
-            <p><a href="http://askhubchandani.github.io">Copyright &copy; Adarsh Khubchandani.</a></p>
-        </div>
-        <div>
-            <ul>
-                <li><a href="https://www.codepen.io/askhubchandani/" target="_blank"><i class="fa fa-codepen"></i></a></li>
-                <li><a href="https://github.com/askhubchandani" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://twitter.com/askhubchandani" target="_blank"><i class="fa fa-twitter"></i></a></li>
-		<li><a href="https://facebook.com/Adarsh.Khubchandani" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            </ul>
+    <footer class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyrights © <a href="https://askhubchandani.github.io" target="_blank">Adarsh Khubchandani</a> | Made with <span id="heart">&hearts;</span> in India </span>
+           </div>
         </div>
     </footer>
-    
-</div>
 		
 <!-- Smooth scrolling effect -->
             

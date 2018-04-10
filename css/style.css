@@ -164,6 +164,9 @@ a {
    
 /* Footers Sections Styling */
 
+#heart {
+    color: #f7403a;
+}
 footer {
     margin-top: 2%;
     padding: 1%;

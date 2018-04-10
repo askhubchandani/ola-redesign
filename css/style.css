@@ -105,9 +105,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 400px) {
-body { font-size:850%;}
-}
+
 /* Main Section Stling */
 
 #main {
@@ -146,7 +144,7 @@ body { font-size:850%;}
 .feature article {
     text-align: justify;
     margin: 8% auto;
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .feature article p {
@@ -155,6 +153,10 @@ body { font-size:850%;}
     line-height: 1.2;
     color: #000000;
     margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 400px) {
+body { font-size:75%;}
 }
 
 @media screen and (min-width: 810px) {

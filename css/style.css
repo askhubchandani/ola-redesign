@@ -105,7 +105,9 @@ a {
   }
 }
 
-
+@media only screen and (max-width: 400px) {
+body { font-size:850%;}
+}
 /* Main Section Stling */
 
 #main {
@@ -115,7 +117,7 @@ a {
 
 #main h1 {
     margin-bottom: 2px;
-    font-size: 120%;
+    font-size: 100%;
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
 }
@@ -130,7 +132,7 @@ a {
 
 #main p {
     padding: 0 3px;
-    font-size: 120%;
+    font-size: 100%;
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
 }
@@ -144,7 +146,7 @@ a {
 .feature article {
     text-align: justify;
     margin: 8% auto;
-    max-width: 900px;
+    max-width: 80%;
 }
 
 .feature article p {

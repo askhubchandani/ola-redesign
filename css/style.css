@@ -115,7 +115,7 @@ a {
 
 #main h1 {
     margin-bottom: 2px;
-    font-size: 32px;
+    font-size: 100%;
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
 }
@@ -130,30 +130,29 @@ a {
 
 #main p {
     padding: 0 3px;
-    font-size: 20px;
+    font-size: 100%;
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
 }
 
 .feature {
-    background: #fff no-repeat;
+    background: #fff no-repeat 0 0;
     height: auto;
     z-index: 500;
-    
 }
 
 .feature article {
     text-align: justify;
-    margin: 10% auto;
+    margin: 8% auto;
     max-width: 900px;
 }
 
 .feature article p {
-    font-family: "Georgia";
-    font-size: 1.5em;
+    font-family: "Patua One";
+    font-size: 100%;
     line-height: 1.2;
     color: #000000;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 
 @media screen and (min-width: 810px) {
@@ -163,7 +162,7 @@ a {
     
     #main p {
         width: 600px;
-        font-size: 15px;
+        font-size: 100%;
         margin: 0 auto;
         margin-bottom: 18px;
     }

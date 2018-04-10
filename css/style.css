@@ -115,7 +115,7 @@ a {
 
 #main h1 {
     margin-bottom: 2px;
-    font-size: 100%;
+    font-size: 120%;
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
 }
@@ -130,7 +130,7 @@ a {
 
 #main p {
     padding: 0 3px;
-    font-size: 100%;
+    font-size: 120%;
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
 }
@@ -149,7 +149,7 @@ a {
 
 .feature article p {
     font-family: "Patua One";
-    font-size: 100%;
+    font-size: 120%;
     line-height: 1.2;
     color: #000000;
     margin-bottom: 4%;
@@ -160,16 +160,7 @@ a {
         font-size: 37px;
     }
     
-    #main p {
-        width: 600px;
-        font-size: 100%;
-        margin: 0 auto;
-        margin-bottom: 18px;
-    }
-}
-
-
-
+   
 /* Footers Sections Styling */
 
 footer {

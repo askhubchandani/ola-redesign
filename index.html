@@ -42,79 +42,69 @@
                             <p>OLA, one of the India's most successful startups has a lot of UI/UX problems in it's app. One of the main problem is: <b>CLUTTER.</b><br>
 				Apart from clutter there are a lot of other problems such as displaying the same information at various places, inconsistent user flows and random assignment of Share Rides.</p>
 
-				<p><b>Weaknesses in the app:</b>
-					1) Inconsistent User Flows.
-					2) Displaying the same info at various places.
-					3) Too many options in Hamburger Menu.
+				<p><b>Weaknesses in the app:</b><br>
+					1) Inconsistent User Flows.<br>
+					2) Displaying the same info at various places.<br>
+					3) Too many options in Hamburger Menu.<br>
 					4) Random assignment of Share Rides.</p>
 				
- <p> This is the general scenario of how from Point A to Drop A in OLA Share works.				    
-You are not the only passenger travelling in the cab, you will be sharing a hatchback five seater cab with two more people before you reach your destination
-Just picking up all three passengers would take approximately 30 mins or more, depending on different conditions
-Traffic
-Vehicle Condition
-Distance from first passenger pick up to next passenger pick up
-Waiting time at the passenger’s pickup location
-Road Condition
-Lack of communication between driver and Passenger
-Now let’s see how your trip of 10 kms (let’s say) ends up a 2–3 hrs ride around the city with strangers.
+                                <p> Description of OLA Share journey:<br>				    
+                                 You will be sharing a hatchback with two more people before you reach your destination.<br>
+                                 Depending on different conditions given below, the pick-up time can be more than 30 mins.<br>
+                                 1) Traffic.<br>
+                                 2) Vehicle Condition.<br>
+                                 3) Distance from first passenger pick up to next passenger pick up.<br>
+                                 4) Waiting time at the passenger’s pickup location.<br>
+                                 5) Road Condition.<br>
+                                 6) Lack of communication between driver and Passenger.<br>
+				This leads to an enormous increase in the ride time with strangers.</p>
 
-Let’s Keep codes:
+<p> <b>The Share Ride begins:</b><br>
+Three Passengers: P1,P2 & P3.<br>
+Three different drop points: D1, D2 & D3.<br>
+We're not considering the scenario where a passenger books more than 1 seat for a single ride.<br>
 
-Three Passengers: P1,P2 & P3
-Three different drop points: D1, D2 & D3
-For the record, let’s not consider the scenario where a passenger books more than 1 seat for a single ride.
+P1 booked a share ride(which is only 3 mins away), but the cab driver can be delayed because he should drop someone, pick up someone or clean the cab.<br>
+Finally, the driver is at the pick up location, after 8-10 mins and P1's journey starts.<br>
 
-The ride begins
+P1's destination is 25mins away i.e., D1<br>
+The App selects such a route so that the driver gets two more pickups (P2 & P3) and cannot deviate to the shortest path. After traveling 1.5km, driver receives a booking of P2 and picks up P2, which means 1.5km of distance added to the actual route of P1.<br>
 
-P1 booked a pool cab, which is just 5 min away but actually it could be delayed as he should drop someone or pick up someone.
+P2's destination is 32min away i.e., D2<br>
+P1 and P2 started their journey. After travelling a couple of kms there is another booking by P3. Driver picked P3. P1 and P2 are not sure of how long the journey takes.<br>
 
-Finally, after a couple of calls to the driver, he’s at the pick up location. P1 hopped in.
+P1 will be dropped and after dropping P1 only we can see who’s next, depending on the route assigned by the App and if you are really out of luck, we could get another booking.<br></p>
 
-P1 destination is 31mins away i.e., D1
-The App selects the route for P1’s destination to make sure the driver gets two more pickups (P2 & P3) and cannot deviate to the shortest path. After traveling 3km, driver receives a booking of P2 and picks up P2 which could be a potential 3km distance added to the actual route of P1 and started to go from there to drop either P1 or P2 that only driver knows, which is again assigned by the app depending on the route.
+<p><b>Conclusion:(of current Ride Booking experience)</b><br> 
+You have no control of your journey when you book a Share Ride.<br>
+And if you cancel the ride after 5min you are charged a certain amount irrespective of whose fault it is.<br></p>
 
-P2 destination is 16min away i.e., D2
-P1 and P2 started there journey wondering whose drop is first and P1 asked the driver in curiosity, and, as per the App assigned route we are travelling, P2 will be dropped first so P1 ETA changed from the initial 31min to unknown. Meanwhile, after travelling a couple of kms there is another booking by P3. Driver is happy, and P1 & P2, surrendering to their fate, took to their mobile phones to watch movies, assuming they will reach the end by the time they are dropped. Driver picked P3. P1 and P2 are in a fix and not sure of how long the journey takes.
+<p>A new  for Share Ride bookings:(assuming that the cab service providers haven’t thought of this)
 
-P3 hopped in and no one is sure who will be dropped first!
-P1 to Driver: Who are you dropping first Chief (Driver)?
+Give the options and control to the user, instead of the app, which means, let the user know the details of the cabs nearby and no. of. passengers sharing or pooling and ETA for each of the passenger and area.<br>
 
-Driver: let me see the App and he says P1 will be dropped and after dropping P1 only we can see who’s next, depending on the route assigned by the App and if you are really out of luck, we could get another booking.
-
-Conclusion: you have no control of your itinerary when you book a Share or Pool cab.
-And if you cancel the ride after 5min you are charged a certain amount even if the fault is at the drivers end.
-
-Look at bright side though —cab fare is fixed in pool or share although your destination is 5 kms and you travelled 30km to reach.
-
-Now let’s see a different strategy which I feel may be good for Users
-
-Assuming that the cab service providers haven’t thought of this, I feel it may help the Product and User primarily.
-
-What if we give the control to the user, instead of the driver, i.e., let the user know the details of the cabs nearby and no.of. passengers sharing or pooling and ETA for each of the passenger and area.
-
-This way
-
-P1 will reach his destination with a difference of 15min in his ETA, give or take
-P1,P2 & P3 know what is the ETA and how long they have to spend in the cab for the actual journey.
-User has the control to choose the driver and book a ride.
+P1 will reach his destination with a difference of 15min in his ETA, give or take.<br>
+P1,P2 & P3 know what is the ETA and how long they have to spend in the cab for the actual journey.<br>
+User has the control to choose the driver and book a ride.<br>
 Search for the drivers who are en route and confirm booking. User can choose from one or more cabs which will take the shortest time given all the information available to him/her.
 </p>
 
-
+<img src="ola1.png" alt="Ola Share">
+<img src="ola2.png" alt="Ola Share">
 
 <p><b>Advantages:</b>
 
-Know the person you are travelling with only after confirming your booking (security reasons)
-Know who’s being dropped first and in how much time
-How many co-passengers are you travelling with (Names not displayed unless you confirm your ride)
-Find the shortest route to your destination
-Show only co-passengers drop location in case the P1 dropped last or second.</p>
+1) You can know the person you are travelling with only after confirming your booking (security reasons).<br>
+2) Know who’s being dropped first and in how much time.<br>
+3) How many co-passengers are you travelling with (Names not displayed unless you confirm your ride).<br>
+4) Find the shortest route to your destination.<br>
+5) Show only co-passengers drop location in case the P1 dropped last or second.</p>
 
-			    
-<p><b>Conclusion:</b>
-
-Rather than sitting in car for hours for a 20min journey. It’s better to spend time in choosing from the options available. The information of Route and Passengers is already available. Just mapping to one destination is needed and considering passengers’ time should be the primary goal instead of distance from point to point.          
+<img src="ola3.png" alt="Ola Share">
+				
+<p><b>Final Conclusion:</b>
+1) Better menu with less optoins in Hamburger menu.<br>
+2) Ability to choose options in Share rides. The information of Route and Passengers is already available. Just mapping to one destination is needed and considering passengers’ time should be the primary goal instead of distance from point to point.          
 </p>
 </article>
 </div>
